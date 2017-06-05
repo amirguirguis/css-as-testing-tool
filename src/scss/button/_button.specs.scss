@@ -1,0 +1,3 @@
+[role='button']:not(button){
+    @include warning('Use <button> tag for buttons');
+}

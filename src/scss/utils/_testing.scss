@@ -3,6 +3,7 @@
     overflow:visible;
     margin-top:40px;
     &::before{
+        text-align: left;
         padding:10px;
         left:0;
         top:-40px;
