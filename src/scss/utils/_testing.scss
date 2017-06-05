@@ -11,6 +11,9 @@
         width:100%;
         min-width: 350px;
         display:inline-block;
+        border-left:5px solid transparent;
+        background-color: #333;
+        border-radius: 4px;
     }
 }
 
@@ -18,8 +21,8 @@
     @include show-error;
     &::before{
         content:$message;
-        background: yellow;
-        color: black;  
+        border-color: #d4d42f;
+        color: #d4d42f;  
     }
 }
 
@@ -27,8 +30,8 @@
     @include show-error;
     &::before{
         content:$message;
-        background: red;
-        color: white;  
+        border-color: #f14e4e;
+        color: #f14e4e;  
     }
 }
 
