@@ -1,0 +1,20 @@
+{
+  "name": "css-as-testing-tool",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss:build": "node-sass --include-path scss src/scss/main.scss public/css/main.css",
+    "scss:watch": "nodemon -e scss -x \"npm run scss:build\""
+  },
+  "author": "Amir Guirguis",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^4.5.3",
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7"
+  }
+}

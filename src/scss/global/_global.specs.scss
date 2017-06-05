@@ -1,0 +1,4 @@
+a:not([href]){
+    display: inline-block;
+    @include error('Anchor tag should have an HREF')
+}

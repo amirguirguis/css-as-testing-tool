@@ -1,0 +1,33 @@
+@mixin show-error {
+    position:relative;
+    overflow:visible;
+    margin-top:40px;
+    &::before{
+        padding:10px;
+        left:0;
+        top:-40px;
+        position: absolute;
+        width:100%;
+        min-width: 350px;
+        display:inline-block;
+    }
+}
+
+@mixin warning($message){
+    @include show-error;
+    &::before{
+        content:$message;
+        background: yellow;
+        color: black;  
+    }
+}
+
+@mixin error($message){
+    @include show-error;
+    &::before{
+        content:$message;
+        background: red;
+        color: white;  
+    }
+}
+
